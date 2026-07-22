@@ -3,152 +3,104 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NOD News</title>
+<title>NOD — Gadgets, Books, Software for Negotiators</title>
+<meta name="description" content="Pocket NOD. Negotiation books. Software. Built by FBI-style negotiation coach Dan Cruz.">
 <style>
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-body {
-background: #0a0a0a;
-color: #fff;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-line-height: 1.6;
-padding: 2rem 1rem;
-}
-
-.container {
-max-width: 720px;
-margin: 0 auto;
-}
-
-header {
-margin-bottom: 4rem;
-text-align: center;
-}
-
-h1 {
-font-size: 2.5rem;
-font-weight: 300;
-margin-bottom: 0.5rem;
-}
-
-.subtitle {
-color: #888;
-font-size: 1rem;
-}
-
-.post {
-background: #1a1a1a;
-border: 1px solid #333;
-padding: 2rem;
-margin-bottom: 2rem;
-transition: border-color 0.2s;
-}
-
-.post:hover {
-border-color: #555;
-}
-
-.meta {
-color: #c9a84c;
-text-transform: uppercase;
-font-size: 0.75rem;
-letter-spacing: 0.1em;
-margin-bottom: 1rem;
-}
-
-h2 {
-font-size: 1.4rem;
-font-weight: 500;
-margin-bottom: 1rem;
-}
-
-p {
-color: #aaa;
-margin-bottom: 1.5rem;
-}
-
-.post a {
-color: #c9a84c;
-text-decoration: none;
-}
-
-.post a:hover {
-text-decoration: underline;
-}
-
-.subscribe {
-background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
-border: 2px solid #c9a84c;
-padding: 3rem 2rem;
-margin: 4rem 0;
-text-align: center;
-}
-
-.subscribe h3 {
-color: #c9a84c;
-font-size: 1.5rem;
-font-weight: 500;
-margin-bottom: 1rem;
-}
-
-.subscribe p {
-color: #888;
-margin-bottom: 2rem;
-}
-
-footer {
-text-align: center;
-color: #888;
-margin-top: 4rem;
-padding-top: 2rem;
-border-top: 1px solid #333;
-font-size: 0.875rem;
-}
+:root{--ink:#0a0a0a;--paper:#fafaf7;--line:#e5e5e0;--accent:#c0392b;--muted:#666;--max:920px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid currentColor}
+a:hover{opacity:.7}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:48px 20px}
+header{padding:80px 20px 48px;text-align:center;border-bottom:1px solid var(--line)}
+header h1{font-size:clamp(40px,8vw,72px);letter-spacing:-.02em;font-weight:800;line-height:1}
+header .tag{font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.18em;margin-top:16px}
+h2{font-size:clamp(28px,5vw,40px);font-weight:800;letter-spacing:-.01em;margin-bottom:24px}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+section .lede{color:var(--muted);font-size:18px;max-width:60ch;margin-bottom:32px}
+.product{display:grid;grid-template-columns:1fr;gap:32px;align-items:center}
+@media(min-width:720px){.product{grid-template-columns:1.1fr 1fr}}
+.product img{width:100%;border-radius:12px;border:1px solid var(--line)}
+.price{font-size:32px;font-weight:800;margin:8px 0 16px}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);padding:14px 28px;border-radius:8px;font-weight:700;border:none;font-size:15px}
+.btn:hover{background:var(--accent);opacity:1}
+.btn.outline{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:24px}
+.card{border:1px solid var(--line);border-radius:10px;padding:20px;background:#fff}
+.card .price{font-size:22px;margin:4px 0 8px}
+.card p{color:var(--muted);font-size:14px;margin:8px 0 12px}
+footer{padding:48px 20px;color:var(--muted);font-size:13px;text-align:center;border-top:1px solid var(--line)}
+footer a{color:var(--ink)}
 </style>
 </head>
 <body>
-<div class="container">
+
 <header>
-<h1>NOD News</h1>
-<p class="subtitle">Updates from the practice. New scripts, what worked, what didn't.</p>
+<h1>NOD<span style="color:var(--accent)">.</span></h1>
+<div class="tag">Gadgets · Books · Software for Negotiators</div>
 </header>
 
-<main>
-<article class="post">
-<div class="meta">Jul 3, 2026 · Scripts</div>
-<h2>10 Free Scripts Are Live</h2>
-<p>Late rent, salary, price objection, cold DM, lease renewal, and more. The exact wording, the tactical empathy framing, and why each one works. Read on the page — no email required.</p>
-<a href="https://negotiatorsondemand.com/scripts.html">Read the scripts →</a>
-</article>
+<!-- PONYTAIL: Pocket NOD is the marquee gadget — physical, first product. Dropbox
+     preorder is the unblocker; swap the form URL once you publish the form. -->
 
-<article class="post">
-<div class="meta">Jul 3, 2026 · Pricing</div>
-<h2>The Catalog Is Up: $5 to $200, Pick Your Edge</h2>
-<p>Field Guide ($5), Membership ($29/mo), Field Manual ($49), RE Scripts ($99), 1-on-1 Coaching ($200). One page, every product, every price.</p>
-<a href="https://negotiatorsondemand.com/products.html">See the catalog →</a>
-</article>
-
-<article class="post">
-<div class="meta">Coming · Q4 2026</div>
-<h2>Pocket NOD — 52 Negotiation Cards</h2>
-<p>Wallet-sized prompt cards. The tactical-empathy framework in your back pocket. Waitlist opens soon on the FatCat Cruz site.</p>
-<a href="https://fatcatcruz.com">Concept preview →</a>
-</article>
-
-<div class="subscribe">
-<h3>One script a week. In your inbox.</h3>
-<p>Free. Unsubscribe anytime. No spam, no upsell — just the script.</p>
-<script async data-uid="b9f24e182a" src="https://negotiatorsondemand.ck.page/b9f24e182a/index.js"></script>
+<section class="wrap" id="pocket-nod">
+<div class="product">
+<div>
+<h2>Pocket NOD</h2>
+<p class="lede">A pocket reference card built from 1,000+ live negotiation sessions. The triggers, the labels, the responses — on something you can actually hold.</p>
+<div class="price">$39 · ships Q1 2027</div>
+<a class="btn" href="https://forms.gle/REPLACE_ME" target="_blank" rel="noopener">Reserve yours — $1 →</a>
 </div>
-</main>
+<div>
+<!-- PONYTAIL: placeholder render. Drop the real product photo at /pocket-nod.png
+     once you have the photo and the form URL above is live. -->
+<img src="./pocket-nod.png" alt="Pocket NOD — pocket reference card" onerror="this.style.display='none'">
+</div>
+</div>
+</section>
+
+<!-- PONYTAIL: three book products. Amazon ASIN came from the NOD-ify catalog
+     (B0H6T2M995, Kindle Book, $9.99). Gumroad handles the manuals. -->
+
+<section class="wrap" id="books">
+<h2>Books</h2>
+<p class="lede">The full library. The Kindle is the on-ramp. The manuals are the operating system. The field guide is the cheat sheet you'll carry.</p>
+<div class="cards">
+<div class="card">
+<div class="price">$5</div>
+<h3 style="font-size:18px;margin:0 0 4px">Field Guide</h3>
+<p>Quick-reference. Every tool on one page.</p>
+<a href="https://dancruzpro.gumroad.com/l/xbbrxc" target="_blank" rel="noopener">Get the guide →</a>
+</div>
+<div class="card">
+<div class="price">$9.99</div>
+<h3 style="font-size:18px;margin:0 0 4px">Kindle Book</h3>
+<p>The NOD system in full. Amazon.</p>
+<a href="https://www.amazon.com/dp/B0H6T2M995" target="_blank" rel="noopener">Buy on Kindle →</a>
+</div>
+<div class="card">
+<div class="price">$49</div>
+<h3 style="font-size:18px;margin:0 0 4px">Field Manual</h3>
+<p>33 chapters. Every tool scripted. The deep dive.</p>
+<a href="https://dancruzpro.gumroad.com/l/xbbrxc" target="_blank" rel="noopener">Unlock the manual →</a>
+</div>
+</div>
+</section>
+
+<!-- PONYTAIL: software link is the one outbound CTA. negotiatorsondemand.com/MixMatch.html
+     is the actual app — not the marketing root. -->
+
+<section class="wrap" id="software">
+<h2>Software</h2>
+<p class="lede">MixMatch. 28 tools. 5 modes. A timer. Free to start. The pocket card is the offline version — the app is the live one.</p>
+<a class="btn outline" href="https://negotiatorsondemand.com/MixMatch.html?utm_source=nodnew&utm_medium=site&utm_campaign=cta" target="_blank" rel="noopener">Open MixMatch →</a>
+</section>
 
 <footer>
-© 2026 FatCat Asset Management
+NOD · Gadgets, Books, Software for Negotiators ·
+<a href="https://negotiatorsondemand.com">negotiatorsondemand.com</a>
 </footer>
-</div>
+
 </body>
 </html>
